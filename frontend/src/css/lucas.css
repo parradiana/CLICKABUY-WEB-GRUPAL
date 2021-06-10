@@ -1,0 +1,652 @@
+:root {
+    /* --fcolor: #ee4054; */
+    --fcolor: #48d1be;
+}
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarContainer{
+    background-color: var(--fcolor);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.filterNavbar{
+    width: 40vw;
+    height: 5.5vh;
+    padding: 0 1.5vw;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0px 4px 5px 1px #00000022;
+}
+
+.navbarLinks * {
+    margin-right: 10px;
+}
+
+.categoryContainer {
+    /* background-color: #555555; */
+    /* margin-top: 23vh; */
+    /* min-height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.categoryStoresContainer{
+    background-color: white;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.categoryStoresContainer > span{
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+
+.categoryStoresSection{
+    /* background-color: white; */
+    width: 95%;
+
+    /* height: 50vh; */
+    /* margin-top: 30px; */
+    margin-bottom: 6vh;
+    padding: 1vh 2vw;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    /* height: 130vh; */
+}
+
+/* .categoryStoresCards{
+    background-color: var(--fcolor);
+    background-color: #ffffff;
+    margin: .5vh .5vw;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 5px 1px #00000022;
+} */
+
+.contenedorProductAddFromStore{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 4px 5px 1px #00000022;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.tituloAdminStore{
+    color: black !important;
+}
+
+.storeStars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;   
+}
+
+.productPageContainer{
+    background-color: white;
+    padding: 0 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productPageCard{
+    background-color: #ffffff;
+    width: 95%;
+    height: 80%;
+    padding: 5vh 5vw;
+    box-shadow: 0px 2px 5px 1px #00000022;
+    border-radius: 5px;
+    margin-top: 4vh;
+}
+.progressStarContainer{
+    width: 28vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    font-family: "Poppins-Regular", Helvetica, Arial, sans-serif !important;
+
+}
+.progressStarContainer span {
+    font-family: "Poppins-Regular", Helvetica, Arial, sans-serif !important;
+    width: 20%;
+    /* text-align: center; */
+    
+}
+
+.starsReviewsContainer{
+    display: flex;
+    width: 46vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.starsReviews{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.myStoresHeader{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    height: 7vh;
+    padding: 0 1vw;
+    margin-top: 1.3vh;
+}
+
+.myStoresHeader .backToHome{
+    padding: 0;
+    margin: 0;
+}
+
+.myStoresTitle{
+    margin-left: 35%;
+    font-size: 2rem;
+
+}
+
+.myStoreContainer{
+    background-color: white;
+    min-height: 77.5vh;
+    /* padding: 0vh 2vw 0 3vw; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    
+}
+
+.myStoresModalTotalContainer{
+    background-color: #000000dd;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+}
+
+.myStoresModalContainer{
+    /* background-color: #000000ee; */
+    width: 100%;
+    height: 100%;
+    position: realtive;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.myStoresModal{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.myStoresEditModal{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.myStoresModalButtonContainer{
+    /* background-color: red; */
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.myStoresModalButtonContainer button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    width: 10vw;
+    /* padding: .2vh 0; */
+    height: 6vh;
+    border-radius: 5px;
+}
+
+
+
+.containerOfItemsMyStores{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    padding: 0 2vw;
+}
+
+.storeCardsAdmin *{
+    text-decoration: none;
+    
+}
+
+.containerOfItemsMyStores .storeCardsAdmin {
+    text-decoration: none;
+}
+
+
+.myStoreBackTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 1vw;
+    position: relative;
+    
+}
+
+.myStoreBackTitle .backToHome{
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.myStoreTitle{
+    position: absolute;
+    /* background-color: red; */
+    width: 98%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.myStoreMain{
+    display: flex;
+    /* background-color: blue; */
+}
+
+.myStoreInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    width: 17vw;
+    padding: 2.5vh 3vw ;
+}
+
+.myStoreInfo .myStoreImg{
+    /* background-color: black; */
+    background-size: cover;
+    background-position: center;
+    width: 16vw;
+    height: 16vw;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+
+.myStoreContainer .buttonAdm{
+    background-color: #000000;
+    width: 16vw;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    height: 6vh;
+    margin: 1vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.buttonAdm:hover{
+    background-color: #EA957F;
+    /* color: #000000; */
+    /* transition: .3s; */
+}
+
+.myStoreProducts{
+    flex-grow: 1;
+    /* background-color: green; */
+    padding: .5vh 1vw;
+}
+
+.prodAdminStore{
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px 1px #00000022;
+    /* background-color: #555555; */
+    margin: 1.5vh 0;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+    justify-content: center;
+}
+
+.prodAdminStoreButtonsDiv{
+    position: absolute;
+    top: 1vh;
+    right: .5vw;
+    width: 7vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prodAdminStoreButtonsDiv button{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.adminStoresCardsIcons{
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+.prodAdminStoreDeleteModal{
+    background-color: #000000fe;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.prodAdminStoreDeleteModal span{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.prodAdminStoreDeleteModalButtons{
+    width: 18%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prodAdminStoreDeleteModalButtons button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    width: 6vw;
+    padding: .5vh 0;
+    border-radius: 5px;
+}
+
+.prodAdminStoreEditModal{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    width: 70%;
+    /* height: 100%; */
+}
+
+.prodAdminStoreInfoContainer{
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    /* height: 100%; */
+}
+
+.prodAdminStoreInfoTitles{
+    display: flex;
+    flex-direction: column;
+    /* padding: 3vw; */
+}
+
+.prodAdminStoreInfoFields{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    height: auto;
+    padding: 3vh;
+}
+
+.prodAdminStoreImg{
+    width: 22vw;
+    height: 17vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.prodAdminStoreImgEdit{
+    width: 100px;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanProdCard{
+    height: 4vh;
+    font-size: .9rem;
+    margin-bottom: 3vh;
+}
+.spanProdCardDescription{
+    height: auto;
+    margin-bottom: 3vh;
+}
+
+.inputProdCard{
+    height: 3vh;
+    font-size: .9rem;
+    margin: .55vh 0;
+    border: none;
+    border-bottom: #999999 solid 1px;
+    outline: none;
+}
+.buttonConfirmEdit{
+    height: 5vh;
+    margin-left: 2.5vw;
+    margin-top: 2vh;
+    padding: 0 .7vw;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.adminAppHeader{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    margin-bottom: 1vh;
+    height: 10vh;
+}
+
+.myAdminAppTitle{
+    position: absolute;
+    left: 40%;
+    font-size: 1.7rem;
+}
+
+.adminAppHeader .backToHome{
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.adminAppCard{
+    display: flex;
+    background-color: #ffffff;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    border-radius: 5px;
+}
+.adminAppStoreImg{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin: 0 .5vw;
+}
+
+.adminAppStoreInfo{
+   display: flex;
+   flex: 1;
+   /* background-color: blue; */
+}
+
+.adminAppStoreInfoStore{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1vw 2vw;
+
+}
+
+.adminAppStoreInfoUser{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    padding: 1vw 1vw;
+    width: 40%;
+    align-items: center;
+}
+
+.adminAppUserImg{
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.adminAppStoreButtons{
+    /* background-color: violet; */
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.adminAppStoreButtons button {
+    width: 7vw;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: .7vh;
+    border-radius: 5px;
+    margin-right: 2vw;
+}
+
+.prelaoderContainer{
+    /* background-color: rebeccapurple; */
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 40%;
+}
+
+.prelaoderContainerStore{
+    /* background-color: rebeccapurple; */
+    height: 60vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 25%;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 5px solid #000;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 50px;
+      left: 50px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+  
+.buttonFileEditModal{
+    background-color: #000000;
+    width: 23vw;
+    margin: 1vh 0;
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    border-radius: 5px;
+
+}
+
+.buttonFileEditModal label{
+    margin: 0;
+}

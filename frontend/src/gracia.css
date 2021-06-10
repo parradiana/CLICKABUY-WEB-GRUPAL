@@ -1,0 +1,18 @@
+.g-sign-in-button .text-container {
+  /* font-family: Roboto, arial, sans-serif; */
+  /*  font-weight: 500;
+  letter-spacing: 0.21px;
+  font-size: 16px;
+  line-height: 48px;
+  vertical-align: top;
+  border: none; */
+  /*  display: inline-block; */
+  text-align: center;
+  /*  width: 180px; */
+}
+
+.userImg {
+  min-width: 100px;
+  width: 10vw;
+  height: 10vw;
+}
